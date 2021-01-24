@@ -1,0 +1,42 @@
+.contenedor__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    &__lista {
+        display: flex;
+        list-style: none;
+        margin-left: 10%;
+        li {
+            padding-right: 20px;
+            font-family: 'Opensans', sans-serif;
+        }
+    }
+    &__botones {
+        display: flex;
+        text-align: right;
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 992px) {
+    .lista-2,
+    .lista-3,
+    .lista-4,
+    .button_secundary,
+    .button_regular {
+        display: none;
+    }
+    .button-burguer {
+        display: flex;
+        justify-content: space-around;
+        font-size: $x-large;
+    }
+}
+
+@media (min-width: 992px) {
+    .button-burguer {
+        display: none;
+        background-color: none;
+    }
+}

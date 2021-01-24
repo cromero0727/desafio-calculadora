@@ -1,0 +1,39 @@
+.contenedor__precios {
+    // height: 80vh;
+    background-image: url(/assets/img/bg-price.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 3rem;
+    &__row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &--bg {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+    &--titulo {
+        font-family: $primary_font;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5.5rem 0 1rem 0;
+        padding: 6rem 0 0 0;
+        color: $light_white;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+    .contenedor__precios {
+        &__row {
+            display: grid;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
