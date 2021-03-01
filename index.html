@@ -6,10 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calculadora</title>
+    <link rel="stylesheet" href="">
+
+
+
+    <style>
+        #resultado {
+            height: 100px;
+            width: 200px;
+            border: solid 1px blue;
+        }
+    </style>
 </head>
 
-<body>
+<body onload="init();">
+    <h1>Calculadora</h1>
+    <table>
+        <tr>
+            <td>
+                <div id="resultado"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="siete">7</button>
+                <button id="ocho">8</button>
+                <button id="nueve">9</button>
+                <button id="division">/</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="cuatro">4</button>
+                <button id="cinco">5</button>
+                <button id="seis">6</button>
+                <button id="multiplicacion">x</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="uno">1</button>
+                <button id="dos">2</button>
+                <button id="tres">3</button>
+                <button id="resta">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="cero">0</button>
+                <button id="reset">C</button>
+                <button id="igual">=</button>
+                <button id="suma">+</button>
+            </td>
+        </tr>
+    </table>
+    <table></table>
 
+
+
+
+
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
